@@ -33,6 +33,21 @@
         width: 100vw;
         background-color: #00cb79;
     }
+    color: white;
+    font-family: "Montserrat";
+    text-align: center;
+    h1{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 44px;
+    }
+    p{
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 19px;
+        width: 433px;
+    }
 }
 
 .card {
@@ -41,12 +56,11 @@
     width: 1240px;
     box-shadow: 0 4px 30px 0 rgba(0,0,0,.06);
     border-radius: 7px;
-
+    background-color: white;
     display: grid;
     grid-template-rows: 1fr 50px;
 
     &__inputs {
-        background-color: skyblue;
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(4, 1fr);
@@ -57,17 +71,35 @@
 }
 
 .input {
+    font-family: "Montserrat";
+    text-align: center;
     display: grid;
     // grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
 
     &__title {
         grid-column: input-s/input-e;
+        boarder-top: 1px solid #B3B3B3;
+        color: #B3B3B3;
+        font-size: 12px;
+        font-weight: 300;
     }
     input {
         grid-column: input-s/input-e;
+        border: none;
+        font-size: 15px;
+        text-align: center;
+        // width: 190px;
+        // height: 40px;
     }
     &__number {
         grid-column: number-s/number-e;
+        background-color: #00CB79;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 3px;
+        border-radius: 50%;
     }
 }
