@@ -8,6 +8,12 @@
     font-size: 22px;
     text-align: center;
 }
+.gray{
+    background: #b3b3b3;
+}
+.green{
+    background: #00CB79;
+}
 .home {
     position: relative;
     background-color: rgba(207, 207, 207, 0.06);
@@ -87,16 +93,17 @@
     }
     button{
         justify-self: center;
-        transform: translateY(50%);
     }
     &__generate{
         background-color: #00CB79;
         @include button;
+        transform: translateY(-300px);
     }
 
     &__clear{
         background-color: #45b0e5;
         @include button;
+        transform: translateY(50%);
     }
     &__content{
         width: 1100px;
@@ -104,10 +111,23 @@
         background-color: #f2f2f2;
         justify-self: center;
         margin-bottom: 84px;
+        font-family: 'montserrat';
+
+        &__label {
+            height: 18px;
+            width: 18px;
+            line-height: 22px;
+            background-color: black;
+            border-radius: 50%;
+            font-size: 14px;
+            text-align: center;
+            color: white;
+            display: inline-block;
+            margin: 4px;
+        }
         p {
-            line-height: 29px;
             padding: 50px 47px;
-            font-family: 'montserrat';
+            line-height: 29px;
             font-size: 16px;
             font-weight: 300px;
         }
@@ -148,7 +168,6 @@
     }
     &__number {
         grid-column: number-s/number-e;
-        background-color: #00CB79;
         align-items: center;
         color: white;
         font-size: 20px;
